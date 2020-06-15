@@ -3,7 +3,17 @@ temp = []
 H=[]
 W=[]
 
-''' Code to take input starts here'''
+''' Code to take input starts here
+    Enter input as cordinates comma seprated eg. 3,4
+    To break the input cordinates enter an integrer value
+    eg.
+    4,0
+    4,-5
+    7,-5
+    7,0
+    1        ## to break 
+    1,1      ## Source input
+    '''
 def tempLength(temp):
     if len(temp)== 4:
         buildings.append(temp.copy())
