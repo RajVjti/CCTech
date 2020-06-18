@@ -20,8 +20,8 @@ def InsidePolygon(polygon,n,p):
         p2.h = polygon[(i+1)%n].h - p.h
         p2.v = polygon[(i+1)%n].v - p.v
         angle += Angle2D(p1.h,p1.v,p2.h,p2.v)
-'''function ends here'''
-'''checks if angle is less than 2*pi then inside otherwise outside'''
+    '''function ends here'''
+    '''checks if angle is less than 2*pi then inside otherwise outside'''
     if(abs(angle)<=2*m.pi):
         return ("FALSE")
     else:
@@ -32,6 +32,11 @@ def Angle2D(x1,y1,x2,y2):
     theta1=m.atan2(y1,x1)
     theta2=m.atan2(y2,x2)
     dtheta=theta2-theta1
+    print(dtheta)
+    while dtheta>m.pi:
+        dtheta-=(2*m.pi)
+    while dtheta<-m.pi:
+        dtheta+=(2*m.pi)
     return(dtheta)
 
 
