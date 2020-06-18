@@ -10,7 +10,6 @@ class Point():
 '''Computes the sum of angle made between test point and each pair of points
     making up the angle'''
 def InsidePolygon(polygon,n,p):
-    i=0
     angle=0
     p1=Point(0,0)
     p2=Point(0,0)
