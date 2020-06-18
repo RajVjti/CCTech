@@ -15,11 +15,11 @@ def InsidePolygon(polygon,n,p):
     p1=Point(0,0)
     p2=Point(0,0)
     for i in range (0,n):
-        p1.h = polygon[i].h - p.h;
-        p1.v = polygon[i].v - p.v;
-        p2.h = polygon[(i+1)%n].h - p.h;
-        p2.v = polygon[(i+1)%n].v - p.v;
-        angle += Angle2D(p1.h,p1.v,p2.h,p2.v);
+        p1.h = polygon[i].h - p.h
+        p1.v = polygon[i].v - p.v
+        p2.h = polygon[(i+1)%n].h - p.h
+        p2.v = polygon[(i+1)%n].v - p.v
+        angle += Angle2D(p1.h,p1.v,p2.h,p2.v)
 '''function ends here'''
 '''checks if angle is less than 2*pi then inside otherwise outside'''
     if(abs(angle)<=2*m.pi):
